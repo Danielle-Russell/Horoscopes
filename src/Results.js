@@ -6,28 +6,17 @@ export default class Results extends React.Component {
     const results = this.props.results;
     return (
       <div>
-          <div className="results">
-              {results.current_date}
+        <div className="first-row">
+          <div className="results">Date Range: {results.date_range}</div>
+          <div id="desc" className="results">
+            Mood: {results.mood}
           </div>
-          <div className="results">
-              {results.date_range}
-          </div>
-        <div id="desc" className="results">
-            {results.description}
+          <div className="results">Color: {results.color}</div>
         </div>
-        <div className="results">
-            {results.compatibility}
+        <div className="second-row">
+        <div className="results">{results.description}</div>
+        <div id="circle" className="results">Soulmate: {results.compatibility}</div>
         </div>
-        <div className="results">{results.color}</div>
-        <div className="results">
-              {results.lucky_number}
-          </div>
-          <div className="results">
-              {results.lucky_time}
-          </div>
-          <div className="results">
-              {results.mood}
-          </div>
       </div>
     );
   }

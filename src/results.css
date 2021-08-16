@@ -1,4 +1,45 @@
 .results {
-    border: solid;
-   
+  border: solid;
+}
+
+.first-row,
+.second-row {
+  display: flex;
+  flex-direction: column;
+  margin: 1%;
+}
+
+.first-row > div {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5%;
+  width: 400px;
+  margin-top: 1%;
+}
+
+.second-row > div {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5%;
+  width: 400px;
+}
+
+#circle {
+    border:1px solid;
+    height:150px;
+    border-radius:50%;
+    width: 150px;
+}
+
+@media all and (min-width: 600px) {
+  .first-row,
+  .second-row {
+    flex-direction: row;
+  }
+
+  .first-row > div {
+      margin-left: 1%;
+  }
 }

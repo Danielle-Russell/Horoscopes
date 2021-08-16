@@ -22,7 +22,7 @@ class App extends React.Component {
       .then((json) => this.setState({ json }));
   }
 
-  componentDidUpdate () {
+  componentDidUpdate() {
     this.fetchData();
   }
 
@@ -30,7 +30,15 @@ class App extends React.Component {
     return (
       <div>
         <h1>Daily Horoscope</h1>
-        <Menu updateSign={this.updateSign} />
+        <div className="three">
+          <div>Lucky Number: {this.state.json.lucky_number}</div>
+
+          <div>
+            Select Your Star Sign:
+            <Menu updateSign={this.updateSign} />
+          </div>
+          <div>Lucky Time: {this.state.json.lucky_time}</div>
+        </div>
         <Results results={this.state.json} />
       </div>
     );
