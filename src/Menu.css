@@ -1,4 +1,8 @@
 select {
     display: block;
     margin: 0 auto;
+    margin-top: 5%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }

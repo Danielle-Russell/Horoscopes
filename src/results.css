@@ -16,6 +16,9 @@
   padding: 5%;
   width: 400px;
   margin-top: 1%;
+  background-color: #ece4db;
+  font-family: 'Papyrus';
+  font-weight: 600;
 }
 
 .second-row > div {
@@ -24,6 +27,9 @@
   text-align: center;
   padding: 5%;
   width: 400px;
+  background-color: #ece4db;
+  font-family: 'Papyrus';
+  font-weight: 600;
 }
 
 #circle {
@@ -31,6 +37,10 @@
     height:150px;
     border-radius:50%;
     width: 150px;
+}
+
+span {
+    font-size: 40px;
 }
 
 @media all and (min-width: 600px) {

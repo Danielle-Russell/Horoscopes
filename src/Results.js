@@ -15,7 +15,7 @@ export default class Results extends React.Component {
         </div>
         <div className="second-row">
         <div className="results">{results.description}</div>
-        <div id="circle" className="results">Soulmate: {results.compatibility}</div>
+        <div id="circle" className="results">Soulmate: <span>{results.compatibility}</span></div>
         </div>
       </div>
     );
